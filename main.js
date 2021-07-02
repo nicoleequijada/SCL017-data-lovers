@@ -113,10 +113,12 @@ const eventClick = function(event) {
 let createPokemonDiv = function(pokemonDetail){
     let newDiv = document.createElement('div');
     let newBtnId = document.createElement('section');
+    let newDivImg = document.createElement('div');
     let newImg = document.createElement('img');
     let newDivType = document.createElement('div');
     let newBtnType = document.createElement('div');
     let newGeneration = document.createElement('div');
+    let newDivName = document.createElement('div');
     let newName = document.createElement('button');
     newDiv.classList = ('section-pokemon');
     newName.addEventListener('click',eventClick, false);
@@ -124,19 +126,23 @@ let createPokemonDiv = function(pokemonDetail){
     newBtnId.classList = ('pokemon-identifier');
     newImg.src = pokemonDetail.img;
     newImg.classList = ('img-pokemon');
+    newDivImg.classList = ('new-div-img');
     newDivType.classList = ('div-type');
     newBtnType.innerText = pokemonDetail.type;
     newBtnType.classList = ('type-pokemon')
     newGeneration.innerText = pokemonDetail.generation.name;
     newGeneration.classList = ('generation')
+    newDivName.classList = ('divNamePokemon');
     newName.innerText = pokemonDetail.name;
     newName.classList = ('namePokemon');
     newDiv.appendChild(newBtnId);
-    newDiv.appendChild(newImg);
+    newDivImg.appendChild(newImg);
+    newDiv.appendChild(newDivImg);
     newDivType.appendChild(newBtnType);
     newDivType.appendChild(newGeneration);
     newDiv.appendChild(newDivType);
-    newDiv.appendChild(newName);
+    newDivName.appendChild(newName);
+    newDiv.appendChild(newDivName);
     pokemonList.appendChild(newDiv);
     
 
