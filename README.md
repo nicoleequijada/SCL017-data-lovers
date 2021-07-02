@@ -3,7 +3,7 @@
 ## 1. Descripción General: 
 En este proyecto data-lovers , decidimos trabajar con la temática de pokémon, que se trata de una página web , donde los usuarios que son fanáticos de pokémon podrán ingresar a ella y obtener información relevante de cada uno de ellos , en este caso podrán elegir por tipo y ordenar según la información que deseen , de esta manera se le mostrará en pantalla los pokémon con ciertas propiedades que poseen en específico, y así ya el usuario puede satisfacer sus curiosidades en el momento que lo desee. 
 
-* link del proyecto GH-pages: 
+* link del proyecto GH-pages: https://nicoleequijada.github.io/SCL017-data-lovers/
 
 ## 2. Imagen final
 
