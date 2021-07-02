@@ -35,13 +35,13 @@ const eventClick = function(event) {
   
 
  
-    let saveId = event.srcElement.parentNode.firstChild.innerText;
+    let saveId = event.srcElement.parentNode.parentNode.firstChild.innerText;
     let pokemonDetail = filterIdPokemon(saveId);
     
 
     let  evolutionPokemon = [];
 
-
+    console.log(pokemonDetail);
         if(pokemonDetail[0].evolution && pokemonDetail[0].evolution["next-evolution"]){
             pokemonDetail[0].evolution["next-evolution"].forEach((element) => {
                 evolutionPokemon.push(element.name)
@@ -54,6 +54,7 @@ const eventClick = function(event) {
             }); 
         }else
         evolutionPokemon.push("no tiene evolucion");
+        
 
            
     let attackS = [];
